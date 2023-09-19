@@ -2,26 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+li{
+  list-style-type: none;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+button{
+  border: none;
+  outline: none;
 }
+
+h1 {
+  @apply text-[27px] font-[600] leading-[37px]
+}
+
+h2{
+  @apply text-[24px] font-[600] leading-[33px] 
+}
+h3{
+  @apply text-[21px] font-[600] leading-[29px] 
+}
+h4{
+  @apply text-[19px] font-[600] leading-[140%] 
+}
+h5{
+  @apply text-[17px] font-[500] leading-[150%] 
+}
+h6{
+  @apply text-[15px] font-[500] leading-[150%]
+}
+
+p{
+  @apply text-text-70 text-[15px] leading-[22.5px] font-[400];
+}
+
+.paint-green {
+  @apply bg-accent-70 text-white p-[2px]
+}
+
